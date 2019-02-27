@@ -1,0 +1,218 @@
+#header{
+    background-image:url("images/BackHeader.png");
+}
+#sidebar{
+    background-color: #ddd;
+    float: right;
+	height: 600px;
+    width: 15%;
+}
+#main{
+    background-color: #eee;
+    height: 600px;
+    width: 85%;
+	float:left;
+}
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+  /*  font-size: 100%;*/
+    vertical-align: baseline;
+}
+#label {
+	position:relative;
+	left:20px;
+}
+#header h1{
+    font-size: 2.3em;
+    padding: 15px;
+	color:#F4F73A
+}
+#header h3{
+    font-size: 1.1em;
+    padding: 15px;
+	color:#F4F73A
+}
+
+#nav{
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#nav ul{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+#nav li { 
+    float: left;
+}
+#nav ul a {
+    display: block;
+    width: 7em;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+#nav ul li:last-child a {
+                 
+    border-right: 1px solid #ccc;
+}
+#nav ul a:hover{
+    background-color: #aaa;
+    color: #f4f4f4;
+}
+#nav ul:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+#content{
+    clear: both;
+}
+#nav ul, #header h1,  #footer  {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+ #nav, #header, #footer{
+    min-width: 768px;
+}
+#topBar form {
+    float:right;
+    width:10.5em;
+    text-align:right;
+    margin:0;
+    line-height:.7em; 
+	display:inline;
+	}
+.search {
+  /* устанавливаем необходимую ширину формы в зависимости от дизайна
+  ** форма без проблем растягивается */
+  width: 35%;
+
+  /* кнопку отправки будем позиционировать абсолютно,
+  ** поэтому необходимо это свойство */
+  position: relative;
+}
+
+.search input {
+  /* отключаем бордюры у инпутов */
+  border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+  /* растягиваем поле ввода на всю ширину формы */
+  width: 100%;
+
+  /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+  ** регулируем высоту формы
+  ** внутренний отступ справа (37px) делаем больше левого,
+  ** т.к. там будет размещена кнопка отправки	*/
+  padding: 8px 37px 9px 15px;
+
+  /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* добавляем внутренние тени */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+
+  /* закругляем углы */
+  border-radius: 20px;
+
+  background: #EEE;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;
+  outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+
+/* оформляем кнопку отправки */
+.search .submit {
+  /* позиционируем кнопку абсолютно от правого края формы */
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 37px;
+
+  /* растягиваем кнопку на всю высоту формы */
+  height: 100%;
+
+  cursor: pointer;
+  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+
+  /* добавляем прозрачность кнопке отправки */
+  opacity: 0.5;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 0.8;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+.main-conteiner {
+    background: #ffffff;
+    max-width: 1200px;
+}
+.second {
+    width: 80%;
+}
+/*img {
+     width: 699px;
+	height:437px;
+	border-radius: 10px;*/
+  }
+
+  .img ImgMe
+{
+	width=100px;
+	height=100px;
+	display: inline-block;
+    display: -webkit-inline-box;
+	position:relative;
+}
+.image-second {
+    display: inline-block;
+    display: -webkit-inline-box;
+	position:relative;
+	left:30px;
+	width: 699px;
+	height:437px;
+	border-radius: 10px;
+}	
+.text-second {
+    padding: 45px 25px;
+    max-width: 595px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+}
+.submit1{
+	float:right;
+	position:relative;
+	border-radius: 20px;
+		}
